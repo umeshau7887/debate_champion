@@ -81,7 +81,7 @@ class ZeroshotDebater(AbstractDebater):
 
 
         result = await self.agent.run(prompt)
-        logger.info(result.usage())
+        logger.info(result.usage)
         record_ai_response(self.name, prompt, result.output)
 
         return result.output
