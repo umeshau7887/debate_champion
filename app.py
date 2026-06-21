@@ -82,7 +82,7 @@ async def app_main() -> None:
 
         try:
             logger.info(f"Will ask AI agents to debate {motion}")
-            debateEngine = DebateEngine(motion=motion, total_rounds=1, words_count_turn=50, age=9)
+            debateEngine = DebateEngine(motion=motion, total_rounds=5, words_count_turn=75, age=9)
 
             debateSession = await debateEngine.run_debate()
 
